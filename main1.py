@@ -18,6 +18,7 @@ class MyGame(arcade.Window):
         arcade.set_background_color(open_color.blue_4)
 
         self.animal_list = arcade.SpriteList()
+        
 
 
     def setup(self):
@@ -31,7 +32,82 @@ class MyGame(arcade.Window):
         self.animal_sprite.center_y = y
         self.animal_list.append(self.animal_sprite)
 
-    
+        animal = 'bear'
+        x = 430
+        y = 310
+        self.animal_sprite = arcade.Sprite("assets/{animal}.png".format(animal=animal), 0.5)
+        self.animal_sprite.center_x = x
+        self.animal_sprite.center_y = y
+        self.animal_list.append(self.animal_sprite)
+
+        animal = 'chicken'
+        x = 230
+        y = 200
+        self.animal_sprite = arcade.Sprite("assets/{animal}.png".format(animal=animal), 0.5)
+        self.animal_sprite.center_x = x
+        self.animal_sprite.center_y = y
+        self.animal_list.append(self.animal_sprite)
+
+        animal = 'moose'
+        x = 400
+        y = 100
+        self.animal_sprite = arcade.Sprite("assets/{animal}.png".format(animal=animal), 0.5)
+        self.animal_sprite.center_x = x
+        self.animal_sprite.center_y = y
+        self.animal_list.append(self.animal_sprite)
+
+        animal = 'hippo'
+        x = 200
+        y = 130
+        self.animal_sprite = arcade.Sprite("assets/{animal}.png".format(animal=animal), 0.5)
+        self.animal_sprite.center_x = x
+        self.animal_sprite.center_y = y
+        self.animal_list.append(self.animal_sprite)
+
+        animal = 'narwhal'
+        x = 100
+        y = 100
+        self.animal_sprite = arcade.Sprite("assets/{animal}.png".format(animal=animal), 0.5)
+        self.animal_sprite.center_x = x
+        self.animal_sprite.center_y = y
+        self.animal_list.append(self.animal_sprite)
+
+        animal = 'cow'
+        x = 120
+        y = 500
+        self.animal_sprite = arcade.Sprite("assets/{animal}.png".format(animal=animal), 0.5)
+        self.animal_sprite.center_x = x
+        self.animal_sprite.center_y = y
+        self.animal_list.append(self.animal_sprite)
+
+        animal = 'crocodile'
+        x = 250
+        y = 500
+        self.animal_sprite = arcade.Sprite("assets/{animal}.png".format(animal=animal), 0.5)
+        self.animal_sprite.center_x = x
+        self.animal_sprite.center_y = y
+        self.animal_list.append(self.animal_sprite)
+
+        animal = 'panda'
+        x = 200
+        y = 200
+        self.animal_sprite = arcade.Sprite("assets/{animal}.png".format(animal=animal), 0.5)
+        self.animal_sprite.center_x = x
+        self.animal_sprite.center_y = y
+        self.animal_list.append(self.animal_sprite)
+
+        animal = 'duck'
+        x = 110
+        y = 530
+        self.animal_sprite = arcade.Sprite("assets/{animal}.png".format(animal=animal), 0.5)
+        self.animal_sprite.center_x = x
+        self.animal_sprite.center_y = y
+        self.animal_list.append(self.animal_sprite)
+
+
+
+
+
 
 
 
