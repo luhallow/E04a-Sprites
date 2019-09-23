@@ -6,7 +6,7 @@ utils.check_version((3,7))
 
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
-SCREEN_TITLE = "Sprites Example"
+SCREEN_TITLE = "Sprites Conversation Emote Example"
 
 
 class Emote(arcade.Sprite):
@@ -52,8 +52,21 @@ class MyGame(arcade.Window):
 
         self.emote_sprite = Emote()
         self.emote_sprite.center_x = 400
-        self.emote_sprite.center_y = 360
+        self.emote_sprite.center_y = 350
         self.emote_list.append(self.emote_sprite)
+
+        self.animal_sprite = arcade.Sprite("assets/moose.png", 0.5)
+        self.animal_sprite.center_x = 200
+        self.animal_sprite.center_y = 300
+        self.animal_list.append(self.animal_sprite)
+
+        self.emote_sprite = Emote()
+        self.emote_sprite.center_x = 200
+        self.emote_sprite.center_y = 340
+        self.emote_list.append(self.emote_sprite)
+
+
+
         
 
     def on_draw(self):

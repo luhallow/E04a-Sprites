@@ -6,7 +6,7 @@ utils.check_version((3,7))
 
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
-SCREEN_TITLE = "Sprites Example"
+SCREEN_TITLE = "Sprites Random Animal Example"
 
 
 class MyGame(arcade.Window):
@@ -30,7 +30,12 @@ class MyGame(arcade.Window):
         self.animal_sprite.center_x = x
         self.animal_sprite.center_y = y
         self.animal_list.append(self.animal_sprite)
-        
+
+    
+
+
+
+      
 
     def on_draw(self):
         arcade.start_render()

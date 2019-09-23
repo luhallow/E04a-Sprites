@@ -6,7 +6,7 @@ utils.check_version((3,7))
 
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
-SCREEN_TITLE = "Sprites Example"
+SCREEN_TITLE = "Sprites Mouse Follow Example"
 
 
 class MyGame(arcade.Window):
@@ -26,6 +26,7 @@ class MyGame(arcade.Window):
         self.animal_sprite.center_y = 300
         self.animal_list.append(self.animal_sprite)
         
+        
 
     def on_draw(self):
         arcade.start_render()
@@ -37,8 +38,8 @@ class MyGame(arcade.Window):
 
 
     def on_mouse_motion(self, x, y, dx, dy):
-        pass
-
+       self,x = x
+       self,y = y
 def main():
     """ Main method """
     window = MyGame()
